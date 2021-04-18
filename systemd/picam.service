@@ -1,0 +1,13 @@
+[Unit]
+Description=picam http video server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/picam/picam.sh
+Restart=always
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target
